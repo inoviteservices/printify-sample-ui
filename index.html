@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printify - Custom Prints</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Printify</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Carousel Section -->
+  <section class="hero-carousel">
+    <div class="carousel-slide" style="background-image: url('images/bg1.jpg');"></div>
+    <div class="carousel-slide" style="background-image: url('images/bg4.jpg');"></div>
+    
+    <div class="hero-content">
+      <h1>Custom Prints, Your Style</h1>
+      <p>Premium print-on-demand products designed by you, crafted by us.</p>
+      <a href="shop.html" class="cta-button">Explore more</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Our Top Picks</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/c1.jpg" alt="Product 1">
+        <h3>Personalized T-Shirts</h3>
+        <p>Cozy up in style with your unique prints.</p>
+        <a href="product-details.html" class="product-btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="images/c2.jpg" alt="Product 2">
+        <h3>Custom T-Shirts</h3>
+        <p>Soft, comfy tees with your designs.</p>
+        <a href="product-details.html" class="product-btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="images/c3.jpg" alt="Product 3">
+        <h3>Design Your Own Tee</h3>
+        <p>Your imagination, printed on premium fabric.</p>
+        <a href="product-details.html" class="product-btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Intro Section -->
+  <section class="brand-intro">
+    <h2>About Printify</h2>
+    <p>At Printify, we empower you to bring your creative visions to life with premium custom T-shirts and apparel. Design, print, and wear your style with confidence.</p>
+  </section>
+
+  <!-- Call to Action Block -->
+  <section class="cta-section">
+    <h2>Ready to start your custom journey?</h2>
+    <a href="shop.html" class="cta-button">Explore Our Products</a>
+  </section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">FAQs</a>
+      <a href="#">Return Policy</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Support</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Help Center</a>
+    </div>
+  </div>
+
+  <p>&copy; 2025 Printify. All rights reserved.</p>
+</footer>
+
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); 
+  </script>
+
+</body>
+</html>
