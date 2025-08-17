@@ -1,0 +1,340 @@
+* {
+  --primary-color: #222;
+  --accent-color: #ff6600;
+  --light-grey: #f7f7f7;
+  --border-grey: #ddd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ff6000;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.product {
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cover-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Choti wali preview image */
+.preview-img {
+  width: 120px;   /* size chota */
+  height: 120px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: none; /* ispe hover effect nahi aayega */
+}
+
+/* Hover sirf cover image pe ho */
+.product-card:hover .cover-img {
+  transform: scale(1.05);
+}
+
+/* Card hover effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  margin-bottom: 10px;
+}
+
+.sizes {
+  margin: 10px 0;
+}
+
+.size-btn {
+  padding: 8px 12px;
+  margin: 5px 5px 0 0;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  margin: 10px 0;
+}
+
+.btn, button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover, button:hover {
+  background-color: #0056b3;
+}
+
+.upload-section, .preview-area {
+  margin-top: 10px;
+}
+
+.preview-area img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px white, (0 0 0 0.1);
+  width: 300px; 
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+  .product-details {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .details {
+    text-align: center;
+  }
+}
+
+.hero {
+  background-image: url('bg4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background-color: #e05500;
+}
+
+.orange-slide {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+body.dark-mode {
+  --primary-color: #fff;
+  --accent-color: #ff6600;
+  --light-grey: #222;
+  --border-grey: #444;
+  background-color: #111;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #ff6600, #ff9933);
+  background-size: 200% auto;
+  transition: background-position 0.5s;
+}
+.cta-button:hover {
+  background-position: right center;
+}
+
+.product-card img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-section {
+  background: linear-gradient(45deg, #ff6600, #ff9933);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;    /* Slim strip jaisa padding */
+  margin: 0;             /* Footer jaisa bilkul tight */
+  border-radius: 0;      /* Flat look, no rounded corners */
+  width: 100%;           /* Pura page cover karega */
+}
+.highlight-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.highlight-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.highlight-section .btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.highlight-section {
+  background: #ff6600;   /* orange strip */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;    /* thoda bada strip */
+  margin: 0;             /* footer se chipak jayega */
+  border-radius: 0;      /* flat edges */
+  width: 100%;
+}
+
+.highlight-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.highlight-section .btn {
+  background: white;
+  color: #ff6600;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background: #111;       /* black strip */
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;     /* height barhane ke liye padding badhao */
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* items upar chipke rahenge */
+  flex-wrap: wrap;
+  gap: 30px;              /* columns ke beech gap */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content h3 {
+  color: #ff6600;
+  margin-bottom: 12px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.place-order-bar {
+  width: 100%;
+  background: #ff6600;  /* bar ka color */
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.place-order-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background: #ffe6d5;
+}

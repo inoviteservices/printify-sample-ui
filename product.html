@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Printify - Product Details</title>
+   <link rel="stylesheet" href="styles/product.css">
+     <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">Printify</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="products-container">
+  <div class="product">
+    <div class="product-details">
+      <img src="images/c1.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom T-Shirt</h2>
+        <p>High-quality cotton T-Shirt with customizable print.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+      <div class="colors">
+        <label>Select Color:</label><br />
+        <button class="color-btn">Red</button>
+        <button class="color-btn">Blue</button>
+        <button class="color-btn">Green</button>
+        <button class="color-btn">Costume</button>
+      </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload1" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/c2.jpg" alt="Preview" class="preview-img">
+            <img id="design-preview1" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹499</p>
+        <button onclick="addToCart('Custom T-Shirt', 499)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/image2.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom Sweatshirt</h2>
+        <p>High-quality cotton sweatshirt with customizable print.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload1" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/Sweatshirt.jpg" alt="Preview" class="preview-img">
+            <img id="design-preview1" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹499</p>
+        <button onclick="addToCart('Custom Sweatshirt', 499)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/c3.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom Shirt</h2>
+        <p>High-quality cotton Shirt with customizable print.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+    
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload2" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/shirt.jpg" alt="preview" class="preview-img">
+            <img id="design-preview2" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹549</p>
+        <button onclick="addToCart('Custom Shirt', 549)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+    <div class="product-details">
+      <img src="images/img4.webp" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom Hoodie</h2>
+        <p>High-quality cotton Hoodie with customizable print.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+          
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload3" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/Hoodie.jpg" alt="Hoodie">
+            <img id="design-preview3" alt="preview" class="preview-img">
+          </div>
+        </div>
+        <p class="price">Price: ₹899</p>
+        <button onclick="addToCart('Custom Hoodie', 899)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/img5.webp" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom Printed Puff Sleeves Shirt</h2>
+        <p>Stylish puff sleeves shirt with a unique print design.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload4" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/sleeve.jpg" alt="preview-img" class="preview-img">
+            <img id="design-preview4" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹699</p>
+        <button onclick="addToCart('Custom Printed Puff Sleeves Shirt', 699)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/image2.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Custom Kid's T-Shirt</h2>
+        <p>High-quality cotton T-Shirt for kids with customizable print.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload2" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/kids.jpg" alt="Preview" class="preview-img">
+            <img id="design-preview2" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹549</p>
+        <button onclick="addToCart('Custom Shirt', 549)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/img3.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Women Solid Surplice Neck Top</h2>
+        <p>Stylish and comfortable top for women with a trendy design.</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div>
+          <label class="Fabric">Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="colors">
+          <label>Select Color:</label><br />
+          <button class="color-btn">Red</button>
+          <button class="color-btn">Blue</button>
+          <button class="color-btn">Green</button>
+          <button class="color-btn">Costume</button>
+
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload3" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/Hoodie.jpg" alt="Preview" class="preview-img">
+            <img id="design-preview3" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹899</p>
+        <button onclick="addToCart('Custom Hoodie', 899)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-details">
+      <img src="images/tshirt.jpg" alt="Cover" class="cover-img">
+      <div class="details">
+        <h2>Your Ideas on a T-Shirt/Shirt</h2>
+        <p>Here You can share your ideas and have your own design on a T-Shirt</p>
+        <p>We offer the best quality fabric for all our products.</p>
+        <div class="fabric-type">
+          <label>Fabric Type:</label>
+          <select>
+            <option value="cotton">Cotton</option>
+            <option value="polyester">Polyester</option>
+            <option value="blend">Cotton-Polyester Blend</option>
+          </select>
+        </div>
+        <div class="sizes">
+          <label>Select Size:</label><br />
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+        <div class="upload-section">
+          <label>Upload Your Design:</label><br />
+          <input type="file" id="upload4" accept="image/*"><br />
+          <div class="preview-area">
+            <img src="images/tshirt.jpg" alt="Preview" class="preview-img">
+            <img id="design-preview4" alt="Design Preview">
+          </div>
+        </div>
+        <p class="price">Price: ₹999</p>
+        <button onclick="addToCart('Custom T-Shirt', 999)">Add to Cart</button>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="place-order-container">
+  <button class="place-order-btn" onclick="window.location.href='cart.html' "> Place Order</button>
+</div>
+  
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>Quick Links</h3>
+      <p>Home</p>
+      <p>Shop</p>
+      <p>Contact</p>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Press</p>
+    </div>
+    <div>
+      <h3>Support</h3>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+      <p>Help Center</p>
+    </div>
+  </div>
+</footer>
+  <script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let product = { name, price, quantity: 1 };
+      let existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(product);
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  --primary-color: #222;
+  --accent-color: #ff6600;
+  --light-grey: #f7f7f7;
+  --border-grey: #ddd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 10px;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav a {
+  color: #222;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #ff6000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
+  font-size: 0.95rem;
+}
+
+.product {
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product img {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.sizes {
+  margin: 10px 0;
+}
+
+.size-btn {
+  padding: 8px 12px;
+  margin: 5px 5px 0 0;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+  margin: 10px 0;
+}
+
+.btn, button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background-color: #e05500;
+}
+
+.upload-section, .preview-area {
+  margin-top: 10px;
+}
+
+.preview-area img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px; 
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    text-align: center;
+  }
+}
